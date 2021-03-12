@@ -1,0 +1,11 @@
+.DS_Storm
+.idea/
+.idea/*
+.vscode
+*.sublime*
+npm-debug.*
+
+dist/
+node_modules/
+package-lock.jcon
+app/css/*
