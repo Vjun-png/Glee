@@ -337,7 +337,7 @@
     align-items: flex-end;
     margin-bottom: 70px;
   }
-  &__text{
+  &__info{
     text-align: center;
     align-items: center;
     margin-bottom: 35px;
@@ -433,10 +433,43 @@
     align-items: center;
     padding-top: 190px;
   } 
-  
 }
 
-
+.new-products{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 15px;
+  margin-bottom: 115px;
+  &__item{
+    background-color: #eee;
+    height: 245px;
+    width: 370px;
+    position: relative;
+    overflow: hidden;
+  }
+  &__info{
+    margin: 40px 35px;
+  }
+  &__title{
+    width: 160px;
+    font-size: 16px;
+    line-height: 22px;
+    @extend %DMSans-700;
+    color: $title;
+    margin-bottom: 10px;
+  }
+  &__img{
+    position: absolute;
+    right: 40px;
+    bottom: 45px;
+    object-fit: cover;
+    transform: translate(35%, 7%);
+  }
+  .armchair .new-products__img{
+    margin-right: 35px;
+  }
+}
 
 
 
