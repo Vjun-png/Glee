@@ -27,3 +27,11 @@ a{
   color: $default;
   @extend %Rubik-500;
 }
+
+.breadcrumbs{
+  display: flex;
+  justify-content: center;
+  &__list{
+    display: flex;
+  }
+}

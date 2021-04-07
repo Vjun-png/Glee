@@ -174,8 +174,18 @@
   padding-right: 15px;   
 }
 
-.container {
-  max-width: 1300px;
+.top{
+  &__container{
+    background-color: #eee;
+    padding: 30px 0 30px;
+    text-align: center;
+  }
+  &__title{
+    font-size: 36px;
+    line-height: 24px;
+    @extend %Rubik-400;
+    margin-bottom: 15px;
+  }
 }
 
 .top-slider{
@@ -192,31 +202,31 @@
     line-height: 70px;
     margin-bottom: 40px;
   }
-   &__item {
-     display: flex !important;
-     justify-content: space-between;
-   }
-   &__text{
-     max-width: 360px;
-     color: $title;
-     font-size: 18px;
-     margin-bottom: 65px;
-   }
-   &__img{
-     padding-top: 95px;
-   }
-   &__link{
-     padding: 25px 20px;
-     color: #fff;
-     background-color: #a3bbc8;
-     @extend %DMSans-700;
-     &::after{
+  &__item {
+    display: flex !important;
+    justify-content: space-between;
+  }
+  &__text{
+    max-width: 360px;
+    color: $title;
+    font-size: 18px;
+    margin-bottom: 65px;
+  }
+  &__img{
+    padding-top: 95px;
+  }
+  &__link{
+    padding: 25px 20px;
+    color: #fff;
+    background-color: #a3bbc8;
+    @extend %DMSans-700;
+    &::after{
       content: '\2192';
       color: #fff;
       padding-left: 60px;
       font-size: 30px;
-     }
-   }
+    }
+  }
 }
 
 .slick-dots{
@@ -305,7 +315,6 @@
   &__layer{
     position: absolute;
     margin: 160px 50px;
-    
   }
   &__button{
     padding: 15px;
@@ -368,7 +377,6 @@
     position: relative;
     background-color: #feefe2;
     align-items: center;
-    
   }
   &__items-right {
     width: 850px;
@@ -382,7 +390,6 @@
     top: 50%;
     transform: translateY(-50%);
     left: 50%;
-    
   }
   &__item-img{
     position: absolute;
@@ -400,7 +407,6 @@
     width: 290px;
     color: #243f4d;
     margin-bottom: 50px;
-    
   }
   &__item-btn {
     border: 1px solid #b3b7b5;
@@ -471,9 +477,155 @@
   }
 }
 
+.blog{
+  padding-top: 115px;
+  &__title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    
+    .subtitle{
+      font-weight: bold;
+    }
+    .subtitle::after{
+      content: '>';
+      padding-left: 10px;
+    }
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+  }
+  &__item{
+    max-width: 370px;
+    box-shadow: (0px 6px 25px rgba(37, 37, 37, 0.05));
+    position: relative;
+    background-color: #fff;
+  }
+  &__item-imglink {
+    display: block;
+    img{
+      height: 250px;
+      object-fit: cover;
+    }
+  }
+  &__item-title{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    font-size: 18px;
+  }
+  &__item-box{
+    padding: 30px 30px;
+  }
+  &__item-info{
+    display: flex;
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #222933;
+    .blog__item-autor{
+      margin-right: 40px;
+    }
+  }
+  &__item-link{
+    color: #fff;
+    background-color: #a3bbc8;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 25px;
+    margin-left: 27px;
+    position: absolute;
+    margin-top: -22px;
+  }
+}
+
+.client{
+  background-color: #fef7f0;
+  margin-top: -179px;
+  z-index: -1;
+  &__logo{
+    display: flex;
+    justify-content: space-between;
+    padding: 260px 50px 90px;
+  }
+}
+
+.breadcrumbs{
+  display: flex;
+  justify-content: center;
+  &__item{
+    font-size: 14px;
+    line-height: 24px;
+    color: #222933;
+    padding-right: 7px;
+    &::after {
+      content: '/';
+      padding-left: 3px;
+    }
+    &:last-child{
+      padding-right: 0;
+      &::after{
+        display: none;
+      }
+    }
+  } 
+}
+
+.modal{
+  padding-top: 115px;
+  max-width: 470px;
+  margin: 0 auto 120px;
+  &__label{
+    display: block;
+    font-size: 14px;
+    color: $form;
+    margin-bottom: 30px;
+  }
+  &__input{
+    display: block;
+    width: 100%;
+    border: 2px solid #f6f6f6;
+    margin-top: 13px;
+    height: 50px;
+    padding: 0 15px;
+  }
+  &__errer{
+    font-size: 14px;
+    color: $form;
+    float: right;
+  }
+  &__btn{
+    display: block;
+    background-color: #a3bbc8;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    padding: 15px 0;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  &__btn--registre{
+    display: block;
+    background-color: #fff;
+    border: 2px solid #a3bbc8;
+    font-size: 18px;
+    color: #243f4d;
+    width: 100%;
+    padding: 0 15px;
+    height: 50px;
+    margin-top: 22px;
+  }
+  &__label--registre{
+    border-top: 2px solid #f6f6f6;
+    display: block;
+    text-align: center;
+    padding-top: 30px
+  }
+}
 
 
- 
 
 
 
