@@ -35,3 +35,27 @@ a{
     display: flex;
   }
 }
+
+.client--new {
+  background-color: #fef7f0;
+  margin-top: 0px;
+  padding: 90px 50px 90px;
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  padding-left: 30px;
+  .pagination__list {
+    display: flex;
+  }
+  &__link{
+    padding: 12px 20px;
+    border: 1px solid #a3bbc8;
+    margin: 7px;
+  }
+  &__link--active{
+    background-color: #a3bbc8;
+    color: #fff;
+  }
+}

@@ -295,10 +295,8 @@
 
 .products{
   display: grid;
-  min-height: 270px;
-  min-width: 380px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 270px);
+  grid-template-rows: repeat(2, 380px);
   grid-gap: 30px;
   margin-bottom: 180px;
   &__item{
@@ -309,7 +307,6 @@
     line-height: 40px;
     @extend %DMSans-700;
     color: $title;
-    margin-bottom: 15px;
     position: relative;
   }
   &__layer{
@@ -545,10 +542,10 @@
   background-color: #fef7f0;
   margin-top: -179px;
   z-index: -1;
+  padding: 260px 50px 90px;
   &__logo{
     display: flex;
     justify-content: space-between;
-    padding: 260px 50px 90px;
   }
 }
 
@@ -652,12 +649,188 @@
     background-color: #fcd7b6;
     @extend %DMSans-700;
   }
-
 }
 
+.product {
+  padding: 120px 0 120px;
+  &__inner{
+    display: flex;
+  }
+  &__filters{
+    min-width: 270px;
+  }
+}
 
+.filter{
+  &__title{
+    text-transform: uppercase;
+    color: $title;
+    margin-bottom: 30px;
+    position: relative;
+    &::after{
+      content: ('');
+      position: absolute;
+      border-top: 3px solid #a3bbc8;
+      width: 38px;
+      margin-top: 10px;
+      margin-left: 15px;
+    }
+  }
+}
 
+.filter-category{
+  margin-bottom: 55px;
+  &__label{
+    cursor: pointer;
+  }
+  &__input{
+    @extend %checkbox-hidden;
+    &:checked + .filter-category__checkbox {
+      background-color: #edf1f4;
+    }
+  }
+  &__checkbox{
+    color: $form;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px 12px 15px;
+    border-radius: 5px;
+  }
+}
 
+.filter-price{
+  margin-bottom: 100px;
+  &__label{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.irs--flat .irs-line {
+  top: 6px;
+  height: 3px;
+  background-color: #c2d2db;
+  border-radius: 0px;
+}
+
+.irs--flat .irs-handle {
+  top: 0px;
+  width: 15px;
+  height: 15px;
+  background-color: #a3bbc8;
+}
+
+.irs--flat .irs-handle>i:first-child{
+  display: none;
+}
+
+.irs--flat .irs-bar {
+  top: 5px;
+  height: 5px;
+  background-color: #a3bbc8;
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+  display: flex;
+  justify-content: space-between;
+  color: $form;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #fff;
+  border-radius: 0px;
+  top: 40px; 
+}
+
+.irs--flat .irs-from:before,
+.irs--flat .irs-to:before,
+.irs--flat .irs-single:before{
+  display: none;
+}
+
+.irs--flat .irs-min,
+.irs--flat .irs-max{
+  display: none;
+}
+
+.filter-brand{
+  margin-bottom: 55px;
+  &__label {
+    cursor: pointer;
+  }
+  &__input {
+    @extend %checkbox-hidden;
+    &:checked+.filter-brand__checkbox {
+      background-color: #edf1f4;
+      & + .filter-brand__text, .filter-brand__number{ 
+        color: $title;
+      }
+    }
+  }
+  &__checkbox {
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px 12px 15px;
+    border-radius: 5px;
+    color: $form;
+  }
+  &__number{
+    color: #a3bbc8;
+  }
+}
+
+.product-recent{
+  box-shadow: none;
+  &__items {
+    display: flex;
+    margin-bottom: 30px;
+  } 
+  &__item{
+    width: 70px;
+    height: 70px;
+    background-color: #fdfdfd;
+    color: #333;
+    display: flex;
+    justify-content: center;
+  }
+  &__new{
+    font-size: 14px;
+    padding-left: 25px;
+    @extend %Rubik-500;
+    .star{
+      padding: 8px 0;
+    }
+  }
+}
+
+.products-content{
+  &__filter{
+    margin-bottom: 20px;
+    padding-left: 30px;
+  }
+  &__filter-btn{
+    border: none;
+    background-color: #fff;
+    margin: 5px;
+    cursor: pointer;
+    &.products-content__filter-btn--active{
+      path{
+        fill: #191919;
+      }
+    }
+  }
+  .product-items {
+    display: grid;
+    grid-template-columns: repeat(3, 270px);
+    grid-template-rows: repeat(4, 380px);
+    grid-gap: 30px;
+    margin-bottom: 105px;
+    padding-left: 30px;
+  }
+}
 
 
 

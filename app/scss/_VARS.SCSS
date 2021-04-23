@@ -2,7 +2,8 @@ $accent: #a79f94;
 $default: #1a1a1a;
 $title: #243f4d;
 $bg: #fef7f0;
-$form: #436372;
+$form: #4c636e;
+
 
 %Rubik-400 {
   font-family: 'Rubik-Regular',
@@ -33,6 +34,18 @@ $form: #436372;
   sans-serif;
   font-weight: 700;
 }
+
+%checkbox-hidden{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+
+
+
 
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
