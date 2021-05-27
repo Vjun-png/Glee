@@ -832,6 +832,151 @@
   }
 }
 
+.product-detalis{
+  padding-top: 100px;
+}
+
+.product-one{
+  &__inner{
+    display: flex;
+    margin-bottom: 85px;
+  }
+  &__slide{
+    width: 570px;
+    margin-right: 45px;
+  }
+  &__content {
+    width: 555px;
+  }
+  &__title{
+    font-size: 35px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  &__box{
+    .star{
+      padding: 0;
+      margin-bottom: 25px;
+    }
+  }
+  &__price {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  &__item-text {
+    color: $title;
+    margin-bottom: 35px;
+  }
+  &__item-num{
+    border: 1px solid #a3bbc8;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: bold;
+    width: 150px;
+  }
+  &__item-btn{ 
+    padding: 18px 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #a3bbc8;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    list-style: none;
+    margin-left: 15px;
+  }
+}
+
+.product-tabs{
+  display: flex;
+  justify-content: center;
+  
+  &__reviews-btn {
+    background-color: #edf1f4;
+    text-align: center;
+    width: 240px;
+    padding: 15px;
+    margin-bottom: 35px;
+    margin-right: 13px;
+    border-radius: 7px;
+    color: $title;
+    font-weight: bold;
+    &:hover {
+      background-color: #a3bbc8;
+      color: #fff;
+    }
+  }
+  &__reviews-text {
+    color: $title;
+    line-height: 30px;
+    margin-bottom: 120px;
+  }
+} 
+
+.product-info{
+  padding-top: 55px;
+  &__item{
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: $title;
+  }
+}
+
+.product-slide{
+  display: flex;
+  &__small{
+    width: 140px;
+    margin-right: 24px;
+  }
+  &__small-item{
+    margin-bottom: 24px;
+    width: 140px;
+    height: 160px;
+    img{
+      width: 140px;
+      height: 160px;
+      object-fit: cover;
+    }
+  }
+  &__big{
+    width: 385px;
+    img{
+      width: 385px;
+      height: 530px;
+      object-fit: none;
+    }
+  }
+}
+
+.product-related{
+  &__title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    margin-bottom: 60px;
+  }
+  .product-link{
+    border: 2px solid #edf1f4;
+    border-radius: 5px;
+    padding: 15px 10px;
+    margin-left: 10px;
+    float: left;
+    &:hover{
+      border: 2px solid #a3bbc8;
+    }
+  }
+  .products {
+    grid: none;
+    display: flex;
+    margin-bottom: 0;
+    .products__item {
+      width: 270px;
+    }
+  }
+}
+
 
 
 
