@@ -49,6 +49,12 @@ $(function () {
     arrows: false,
     fade: true,
   });
+
+  $('.products').slick({
+    
+    slidesToShow: 4,
+    slidesToScroll: 1
+  });
   
   $(".star").rateYo({
     starWidth: "12px",
