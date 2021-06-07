@@ -50,8 +50,7 @@ $(function () {
     fade: true,
   });
 
-  $('.products').slick({
-    
+  $('.products-detalis').slick({
     slidesToShow: 4,
     slidesToScroll: 1
   });
