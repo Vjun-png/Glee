@@ -1271,47 +1271,38 @@
     display: block;
   }
   &__input {
-    padding: 10px 215px 10px 7px;
+    padding: 10px 222px 10px 0;
     margin-bottom: 25px;
     border: none;
   }
   &__name{
     position: relative;
   }
-  .comment__name-icon{
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 15px;
-    right: 440px;
+  .comment__input-name{
+    background-image:url('../images/icons/man.svg');
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: bottom 14px right 20px;
   }
-  .comment__mail-icon{
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 15px;
-    right: 15px;
+  .comment__input-email{
+    background-image:url('../images/icons/convert.svg');
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: bottom 14px right 20px;
   }
   &__input-name{
-    margin-right: 25px;
+    margin-right: 20px;
   }
   &__textarea{
-    position: relative;
-    width: 830px;
+    background-image:url('../images/icons/sms.svg');
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: bottom 110px right 20px;
+    width: 820px;
     height: 130px;
     resize: none;
     border: none;
-    margin-bottom: 20px;
-    padding-left: 5px;
-    padding-top: 5px;
-    img{
-      width: 15px;
-      height: 15px;
-      position: absolute;
-      right: 15px;
-      top: 20px;
-      z-index: 1;
-    }
+    margin-bottom: 30px;
   }
   &__btn{
     padding: 12px 30px;
@@ -1322,6 +1313,76 @@
     cursor: pointer;
   }
 }
+
+.contact{
+  padding: 115px 0 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__subtitle{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  &__title{
+    text-align: center;
+    font-size: 35px;
+    @extend %DMSans-700;
+    color: $title;
+    margin-bottom: 70px;
+  }
+  &__info-title{
+    margin-bottom: 20px;
+  }
+  &__info-address{
+    width: 370px;
+    height: 380px;
+    text-align: center;
+    background-color: #fafafa;
+    margin-bottom: 115px;
+    img{
+      padding: 18px 25px;
+      display: inline-block;
+      margin: 70px 0 60px;
+      background-color: #fff;
+      border-radius: 15px;
+    }
+    &:hover{
+      border: 2px solid #ccd9e0; 
+    }
+  }
+  &__form{
+    display: flex;
+    .comment__input{
+      padding: 10px 117px 10px 7px;
+      background-color: #fafafa;
+    }
+    .comment__textarea{
+      width: 625px;
+      background-color: #fafafa;
+    }
+    .comment__input-name{
+      margin-right: 20px;
+    }
+  }
+  #map {
+    width: 500px;
+    height: 330px;
+    margin-left: 50px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

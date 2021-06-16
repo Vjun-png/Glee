@@ -61,5 +61,7 @@ $(function () {
     ratedFill: "#ffcc00",
     spacing: "6px"
   });
+
   
-})
+  
+});
