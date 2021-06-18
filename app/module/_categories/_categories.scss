@@ -1,0 +1,23 @@
+.categories{
+  background-color: #fff;
+  &__title{
+    margin: 70px 0 35px;
+    font-size: 36px;
+    color: #191919;
+    text-align: center;
+    @extend %DMSans-700;
+  }
+  &__links{
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  &__link{
+    margin: 0 15px 0;
+    color: #8b8b8b;
+    @extend %DMSans-700;
+  }
+  &__link:hover{
+    color: #191919;
+    @extend %DMSans-700;
+  }
+}

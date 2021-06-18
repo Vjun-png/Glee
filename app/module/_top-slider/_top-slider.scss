@@ -1,0 +1,60 @@
+.top-slider{
+  background-color: #fcd7b6;
+  padding-top: 65px 0 45px;
+  &__content {
+    max-width: 700px;
+    padding-top: 200px;
+  }  
+  &__title{
+    max-width: 500px;
+    color: $title;
+    font-size: 72px;
+    line-height: 70px;
+    margin-bottom: 40px;
+  }
+  &__item {
+    display: flex !important;
+    justify-content: space-between;
+  }
+  &__text{
+    max-width: 360px;
+    color: $title;
+    font-size: 18px;
+    margin-bottom: 65px;
+  }
+  &__img{
+    padding-top: 95px;
+  }
+  &__link{
+    padding: 25px 20px;
+    color: #fff;
+    background-color: #a3bbc8;
+    @extend %DMSans-700;
+    &::after{
+      content: '\2192';
+      color: #fff;
+      padding-left: 60px;
+      font-size: 30px;
+    }
+  }
+}
+.slick-dots{
+  display: flex;
+  justify-content: center;
+  margin-top: -70px;
+  li{
+    button{
+      border-radius: 50%;
+      border: none;
+      padding: 3px 11px;
+      margin: 0 5px 45px;
+      font-size: 11px;
+      background-color: #f8e2cc;
+    }
+    &.slick-active {
+      button {
+        background-color: #fff;
+      }
+    }
+  } 
+}

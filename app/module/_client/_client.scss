@@ -1,0 +1,10 @@
+.client{
+  background-color: #fef7f0;
+  margin-top: -179px;
+  z-index: -1;
+  padding: 260px 50px 90px;
+  &__logo{
+    display: flex;
+    justify-content: space-between;
+  }
+}

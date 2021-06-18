@@ -1,0 +1,13 @@
+.top{
+  &__container{
+    background-color: #eee;
+    padding: 30px 0 30px;
+    text-align: center;
+  }
+  &__title{
+    font-size: 36px;
+    line-height: 24px;
+    @extend %Rubik-400;
+    margin-bottom: 15px;
+  }
+}
