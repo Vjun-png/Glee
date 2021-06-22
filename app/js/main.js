@@ -1,5 +1,9 @@
 $(function () {
   
+  $('.menu__btn').on('click', function(){
+    $('.menu__list').toggleClass('menu__list--active');
+  });
+
   $('.products-content__filter-btn').on('click', function() {
     $('.products-content__filter-btn').removeClass('.products-content__filter-btn--active');
     $(this).addClass('products-content__filter-btn--active');

@@ -65,6 +65,7 @@
 .footer-bottom{
   height: 90px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
@@ -80,4 +81,43 @@
   content: ('|');
   padding-left: 15px;
   padding-right: 15px;   
+}
+
+@media (max-width: 1150px){
+  .footer-top{
+    flex-wrap: wrap;
+    &__item-form{
+      max-width: 100%;
+      margin-top: 30px;
+    }
+    &__contact{
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 960px){
+  .footer-top{
+    &__item-form{
+      width: 100%;
+      margin-top: 30px;
+    }
+    &__contact{
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 620px){
+  .footer-bottom{
+    justify-content: center;
+    &__copy{
+      width: 100%;
+      text-align: center;
+    }
+  }
 }
