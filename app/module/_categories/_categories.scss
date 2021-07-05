@@ -1,3 +1,22 @@
+.support{
+  display: flex;
+  justify-content: space-between;
+  background-color: #fef7f0;
+  padding: 40px 120px;
+  &__item-content{
+    padding: 0 20px;
+  }
+  &__item{
+    display: flex;
+  }
+  &__item-title{
+    margin-bottom: 10px;
+  }
+  &__item-text{
+    width: 250px;
+  }
+}
+
 .categories{
   background-color: #fff;
   &__title{
@@ -19,5 +38,40 @@
   &__link:hover{
     color: #191919;
     @extend %DMSans-700;
+  }
+}
+
+@media (max-width: 1050px){
+  .support{
+    display: block;
+    padding: 20px 40px;
+    &__item{
+      margin-bottom: 30px;
+    }
+    &__item-title{
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .support{
+    padding: 20px 0px;
+    font-size: 16;
+    &__item-content{
+      padding: 0 5px;
+    }
+    &__item-text{
+      font-size: 14px;
+    }
+  }
+  .categories{
+    &__title{
+      margin: 40px 0 20px;
+      font-size: 34px;
+    }
+    &__links{
+      margin-bottom: 20px;
+    }
   }
 }

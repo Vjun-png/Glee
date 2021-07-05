@@ -61,3 +61,28 @@
     margin-top: -22px;
   }
 }
+
+@media (max-width: 1150px){
+  .blog__items{
+    display: block;
+    .blog__item{
+      max-width: none;
+      margin-bottom: 30px;
+    }
+  }
+  .blog__item-imglink img{
+    display: none;
+  }
+}
+
+@media (max-width: 620px){
+  .blog__title{
+    display: block;
+    .title{
+      margin-bottom: 15px;
+    }
+  }
+  .blog__item-box {
+    padding: 30px 15px;
+  }
+}

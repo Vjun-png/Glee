@@ -6,5 +6,24 @@
   &__logo{
     display: flex;
     justify-content: space-between;
+    align-items: center
+  }
+}
+
+@media (max-width: 1150px){
+  .client{
+    background-color: #fff;
+  }
+}
+
+@media (max-width: 860px){
+  .client{
+    padding: 185px 0px 0px;
+    &__logo{
+      flex-direction: column;
+    }
+    &__logo-link{
+      margin-bottom: 20px;
+    }
   }
 }
